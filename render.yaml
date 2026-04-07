@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: smokewatch-backend
+    runtime: python
+    buildCommand: ""
+    startCommand: "bash start.sh"
+    plan: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
